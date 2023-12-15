@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1702653841015,
+      "tag": "0000_special_retro_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1702654419333,
+      "tag": "0001_safe_blink",
+      "breakpoints": true
+    }
+  ]
+}
