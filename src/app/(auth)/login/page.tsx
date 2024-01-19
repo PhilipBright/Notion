@@ -12,6 +12,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Logo from '../../../../public/cypresslogo.svg';
 import Loader from '@/components/global/Loader';
+import { actionLoginUser } from '@/lib/server-action/server-actions';
 const LoginPage = () => {
     const router = useRouter();
     const [submitError, setSubmitError] = useState('')
@@ -25,7 +26,14 @@ const LoginPage = () => {
     const isLoading = form.formState.isSubmitting;
     const onSubmit: SubmitHandler<z.infer<typeof FormSchema>> = async (
         formData
-    ) => {}
+    ) => {
+        const {error} = await actionLoginUser(formData);
+        if(error) {
+            form.reset();
+            setSubmitError(error.message)
+        }
+        router.replace('/dashboard')
+    }
 
   return (
    <Form {...form}>
