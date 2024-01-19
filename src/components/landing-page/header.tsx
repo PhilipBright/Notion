@@ -17,10 +17,10 @@ import {
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
-
+ 
 const routes = [
   { title: 'Features', href: '#features' },
-  { title: 'Reasources', href: '#resources' },
+  { title: 'Resources', href: '#resources' },
   { title: 'Pricing', href: '#pricing' },
   { title: 'Testimonials', href: '#testimonial' },
 ];
