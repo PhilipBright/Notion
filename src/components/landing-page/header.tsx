@@ -137,13 +137,13 @@ const Header = () => {
                   href="#"
                   title="Introduction"
                 >
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                  Re-usable components built using Radix UI and Tailwind CSS
                 </ListItem>
                 <ListItem
                   href="#"
                   title="Installation"
                 >
-                  How to install dependencies and structure your app.
+                  How to install dependencies and structure your app
                 </ListItem>
                 <ListItem
                   href="#"
